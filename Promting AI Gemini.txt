@@ -1,0 +1,53 @@
+================================================================================
+DOKUMENTASI RIWAYAT PROMPT AI
+Mata Kuliah : Komputasi Numerik
+Topik       : Penyelesaian Sistem Persamaan Linear (SPL) 3 Variabel
+Metode      : Eliminasi Gauss (Gaussian Elimination)
+Platform AI : Google Gemini
+Nama        : Muhammad Rafly Afrizal
+NIM         : 202521420002
+================================================================================
+
+[Prompt 1 — Perencanaan Alur Pengerjaan Tugas]
+"Tolong susunkan panduan langkah demi langkah (step-by-step) untuk menyelesaikan 
+rangkaian tugas Komputasi Numerik ini, mulai dari pembuatan akun dan repositori 
+GitHub, penyusunan algoritma, implementasi kode Python di Google Colab, hingga 
+dokumentasi portofolio di LinkedIn."
+
+[Prompt 2 — Inisialisasi Lembar Kerja Baru di Google Colab]
+"Saya ingin memulai lembar kerja baru dari awal pada Google Colaboratory. Opsi 
+menu apa saja yang perlu dipilih untuk membuat notebook baru, mengganti nama 
+file, serta menyimpannya ke dalam repositori GitHub?"
+
+[Prompt 3 — Konsep Strukturisasi Kode per Cell]
+"Jelaskan maksud dan fungsi pembagian kode program ke dalam beberapa cell 
+terpisah (Cell 1, Cell 2, Cell 3, dan seterusnya) pada Google Colab, serta 
+bagaimana urutan eksekusi variabel antar-cell tersebut bekerja."
+
+[Prompt 4 — Penyusunan Struktur Dokumen Algoritma SPL 3 Variabel]
+"Jelaskan elemen dan sistematika penulisan yang harus dimuat dalam dokumen 
+algoritma penyelesaian Sistem Persamaan Linear (SPL) 3 variabel untuk diunggah 
+ke repositori GitHub sebelum masuk ke tahap pengodean."
+
+[Prompt 5 — Identifikasi Metode Numerik]
+"Metode komputasi numerik spesifik apa yang diterapkan pada rancangan kode 
+Python tersebut, dan bagaimana keterkaitan setiap tahapannya dengan teori 
+penyelesaian SPL 3 variabel?"
+
+[Prompt 6 — Pembuatan Studi Kasus Unik, Algoritma, dan Kode 4 Cell]
+"Buatkan satu studi kasus persamaan linear 3 variabel dengan angka koefisien 
+baru yang unik, kemudian selaraskan narasi algoritmanya dengan implementasi 
+kode Python yang terbagi secara rapi ke dalam 4 cell terpisah menggunakan 
+metode Eliminasi Gauss."
+
+[Prompt 7 — Penanganan Struktur File .ipynb Saat Diedit di GitHub]
+"Mengapa struktur 4 cell pada file notebook (.ipynb) terlihat menyatu menjadi 
+teks mentah saat dibuka melalui fitur edit standar di GitHub, dan bagaimana 
+prosedur yang aman untuk menambahkan dokumentasi agar susunan cell tetap utuh?"
+
+[Prompt 8 — Penyusunan Dokumentasi Detail Tiap Cell dan Baris Kode]
+"Buatkan penjelasan komentar yang rinci untuk setiap baris sintaks Python serta 
+ringkasan penjelasan Markdown pada masing-masing tahap (Cell 1 hingga Cell 4) 
+untuk melengkapi dokumentasi kode di GitHub."
+
+================================================================================
