@@ -1,0 +1,44 @@
+ALGORITMA PENYELESAIAN SISTEM PERSAMAAN LINEAR (SPL) 3 VARIABEL
+Metode: Eliminasi Gauss (Gaussian Elimination)
+
+A. Studi Kasus Persamaan:
+   Persamaan 1: 2x + 3y - z = 11
+   Persamaan 2: 4x - y + 2z = 7
+   Persamaan 3: -1x + 2y + 3z = 12
+
+B. Tahap Input (Inisialisasi Data):
+   1. Siapkan library komputasi numerik (NumPy) untuk pengolahan matriks.
+   2. Definisikan matriks koefisien A berukuran 3x3 dari ketiga persamaan:
+      Baris 1 = [ 2,  3, -1]
+      Baris 2 = [ 4, -1,  2]
+      Baris 3 = [-1,  2,  3]
+   3. Definisikan vektor konstanta B berukuran 3x1 dari ruas kanan persamaan:
+      B = [11, 7, 12]
+
+C. Tahap Proses 1 — Pembentukan Matriks Augmented & Eliminasi Maju:
+   1. Gabungkan matriks koefisien A dan vektor konstanta B menjadi satu matriks
+      augmented M berukuran 3x4.
+   2. Lakukan iterasi untuk setiap kolom pivot i (dari indeks 0 sampai 2):
+      a. Periksa elemen diagonal utama M[i, i]. Jika bernilai nol, hentikan proses
+         atau lakukan pertukaran baris agar tidak terjadi pembagian dengan nol.
+      b. Untuk setiap baris j di bawah baris pivot (j = i + 1 sampai 2):
+         - Hitung faktor pengali: faktor = M[j, i] / M[i, i].
+         - Lakukan Operasi Baris Elementer (OBE) dengan mengurangkan seluruh
+           elemen baris j terhadap hasil kali faktor dengan baris i:
+           M[j] = M[j] - (faktor * M[i]).
+   3. Pastikan seluruh elemen di bawah diagonal utama telah bernilai nol sehingga
+      terbentuk matriks segitiga atas.
+
+D. Tahap Proses 2 — Substitusi Balik (Back Substitution):
+   1. Siapkan array kosong untuk menampung hasil variabel [x, y, z].
+   2. Hitung nilai variabel z dari baris paling bawah (indeks 2):
+      z = M[2, 3] / M[2, 2].
+   3. Substitusikan nilai z ke baris kedua (indeks 1) untuk mendapatkan nilai y:
+      y = (M[1, 3] - M[1, 2] * z) / M[1, 1].
+   4. Substitusikan nilai y dan z ke baris pertama (indeks 0) untuk mendapatkan x:
+      x = (M[0, 3] - (M[0, 1] * y + M[0, 2] * z)) / M[0, 0].
+
+E. Tahap Output dan Verifikasi:
+   1. Tampilkan nilai akhir variabel x, y, dan z ke layar.
+   2. Uji akurasi solusi dengan mengalikan kembali matriks koefisien A terhadap
+      vektor solusi [x, y, z], lalu bandingkan hasilnya dengan vektor B asli.
